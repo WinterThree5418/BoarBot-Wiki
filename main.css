@@ -62,7 +62,7 @@ button:hover {
     cursor: pointer;
 }
 
-#nav {
+nav {
     z-index: 1;
     position: fixed;
     padding-right: 50px;
@@ -72,10 +72,10 @@ button:hover {
     justify-content: right;
     align-items: center;
     list-style-type: none;
-    transition: background-color .3s;
+    transition: background-color .3s, height .5s;
 }
 
-#nav li {
+nav li {
     margin: 0 25px;
 }
 
@@ -101,7 +101,7 @@ li#nav-left {
 }
 
 #nav-left img {
-    width: 75px;
+    width: 60px;
     margin-right: 25px;
 }
 
