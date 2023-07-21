@@ -3,6 +3,7 @@ window.onload = () => {
     placeGrayBoars();
     fixBottomMargin();
 };
+window.onhashchange
 window.onscroll = fixNavBar;
 window.onresize = fixBottomMargin;
 
