@@ -1,14 +1,14 @@
 window.onload = () => {
     placeNav();
     placeGrayBoars();
+    fixBottomMargin();
 };
 window.onscroll = fixNavBar;
-
-console.log(document.getElementById('home-nav'));
+window.onresize = fixBottomMargin;
 
 async function placeNav() {
     const body = document.getElementsByTagName('body')[0];
-    const navHTML = await getFileText('nav.html');
+    const navHTML = await getFileText('/nav.html');
 
     body.innerHTML = navHTML + body.innerHTML;
 }
@@ -26,7 +26,7 @@ function placeGrayBoars() {
     for (let i=0; i<numBoars; i++) {
         const grayBoarElement = document.createElement('img');
         grayBoarElement.className = 'gray-boar';
-        grayBoarElement.src = 'images/BoarBotMascotGray.png';
+        grayBoarElement.src = '/images/BoarBotMascotGray.png';
         grayBoarElement.style.top = (i * boarSpacing - 150) + 'px';
         grayBoarDiv.appendChild(grayBoarElement);
     }
@@ -46,8 +46,13 @@ function fixNavBar() {
     }
 }
 
-function scrollToTop() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+function fixBottomMargin() {
+    const homeMain = document.getElementById('home-main');
+    if (window.innerWidth < 900) {
+        homeMain.style.marginBottom = Math.min(175, 50 + Math.max(0, window.innerWidth - 500) / 2) + 'px';
+    } else {
+        homeMain.style.marginBottom = '175px';
+    }
 }
 
 async function getFileText(path) {

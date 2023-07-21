@@ -38,10 +38,12 @@ html, body {
 }
 
 h1 {
+    color: #51d181;
     font-size: 36px;
 }
 
 h2 {
+    color: #51d181;
     font-size: 20px;
 }
 
@@ -53,7 +55,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    color: #bababa;
+    color: #51d181;
 }
 
 button {
@@ -62,6 +64,10 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+img {
+    object-fit: contain;
 }
 
 nav {
@@ -132,7 +138,7 @@ li#nav-left {
     transform: scaleX(-1);
 }
 
-main#home-main {
+#home-main {
     margin: 175px 50px;
     display: flex;
     justify-content: center;
@@ -171,9 +177,45 @@ main#home-main {
 }
 
 .feature img {
-    width: 300px;
+    max-width: 300px;
+}
+
+.feature:nth-of-type(odd) img {
+    order: 1;
 }
 
 .feature div {
-    width: 400px;
+    max-width: 400px;
+}
+
+@media only screen and (max-width: 900px) {
+    nav {
+        justify-content: center;
+        padding: 0 25px;
+        margin: 0;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    li#nav-left {
+        margin: 0;
+        padding: 0;
+    }
+
+    #home-main {
+        margin-bottom: calc(50px + (100vw - 500px)/2);
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature img {
+        width: 100%;
+        margin-top: 50px;
+        order: 2;
+    }
 }
