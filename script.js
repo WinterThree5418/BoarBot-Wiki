@@ -4,6 +4,8 @@ window.onload = () => {
 };
 window.onscroll = fixNavBar;
 
+console.log(document.getElementById('home-nav'));
+
 async function placeNav() {
     const body = document.getElementsByTagName('body')[0];
     const navHTML = await getFileText('nav.html');
@@ -13,15 +15,17 @@ async function placeNav() {
 
 function placeGrayBoars() {
     const body = document.getElementsByTagName('body')[0];
-    const bodyHeight = body.clientHeight;
+    const bodyHeight = Math.max(body.clientHeight, window.innerHeight+1);
     const boarSpacing = window.innerHeight;
     const numBoars = Math.ceil(bodyHeight / boarSpacing);
 
     const grayBoarDiv = document.createElement('div');
+    grayBoarDiv.className = 'gray-boars';
+    grayBoarDiv.style.height = Math.max(body.clientHeight, window.innerHeight) + 'px';
 
     for (let i=0; i<numBoars; i++) {
         const grayBoarElement = document.createElement('img');
-        grayBoarElement.className = 'nav-img';
+        grayBoarElement.className = 'gray-boar';
         grayBoarElement.src = 'images/BoarBotMascotGray.png';
         grayBoarElement.style.top = (i * boarSpacing - 150) + 'px';
         grayBoarDiv.appendChild(grayBoarElement);
@@ -32,7 +36,6 @@ function placeGrayBoars() {
 
 function fixNavBar() {
     const navBar = document.getElementsByTagName('nav')[0];
-    const boarLogo = document.getElementById('nav-left').children[0];
 
     if (window.scrollY > 100) {
         navBar.style.backgroundColor = '#151518bb';
@@ -41,6 +44,10 @@ function fixNavBar() {
         navBar.style.backgroundColor = '#15151800';
         navBar.style.height = '100px';
     }
+}
+
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 async function getFileText(path) {

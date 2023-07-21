@@ -25,6 +25,7 @@
     color: #ffffff;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -51,6 +52,7 @@ a {
 }
 
 a:hover {
+    cursor: pointer;
     color: #bababa;
 }
 
@@ -79,6 +81,10 @@ nav li {
     margin: 0 25px;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 li#nav-left {
     margin-left: 25px;
     margin-right: auto;
@@ -105,7 +111,14 @@ li#nav-left {
     margin-right: 25px;
 }
 
-.nav-img {
+.gray-boars {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+.gray-boar {
     width: 400px;
     position: absolute;
     z-index: -1;
@@ -113,13 +126,13 @@ li#nav-left {
     rotate: -20deg;
 }
 
-.nav-img:nth-of-type(even) {
+.gray-boar:nth-of-type(even) {
     left: -100px;
     rotate: -20deg;
     transform: scaleX(-1);
 }
 
-main#home {
+main#home-main {
     margin: 175px 50px;
     display: flex;
     justify-content: center;
@@ -149,13 +162,18 @@ main#home {
 
 .feature {
     margin-top: 75px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     opacity: 0%;
     animation: fadeIn 1s 1 1s forwards;
 }
 
 .feature img {
     width: 300px;
-    margin-right: 100px;
+}
+
+.feature div {
+    width: 400px;
 }
