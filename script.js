@@ -2,8 +2,11 @@ window.onload = () => {
     placeNav();
     placeGrayBoars();
     fixBottomMargin();
+    history.pushState('', document.title, window.location.pathname + window.location.search);
 };
-window.onhashchange
+window.onhashchange = () => {
+    history.pushState('', document.title, window.location.pathname + window.location.search);
+}
 window.onscroll = fixNavBar;
 window.onresize = fixBottomMargin;
 
@@ -48,11 +51,13 @@ function fixNavBar() {
 }
 
 function fixBottomMargin() {
-    const homeMain = document.getElementById('home-main');
+    if (window.location.pathname !== '/') return;
+
+    const home = document.getElementById('home');
     if (window.innerWidth < 900) {
-        homeMain.style.marginBottom = Math.min(175, 50 + Math.max(0, window.innerWidth - 500) / 2) + 'px';
+        home.style.marginBottom = Math.min(175, 50 + Math.max(0, window.innerWidth - 500) / 2) + 'px';
     } else {
-        homeMain.style.marginBottom = '175px';
+        home.style.marginBottom = '175px';
     }
 }
 
