@@ -279,6 +279,10 @@ li#nav-left {
         margin-bottom: 25px;
     }
 
+    main {
+        margin-bottom: calc(50px + (100vw - 500px)/2);
+    }
+
     #nav-left {
         margin-bottom: 0;
     }
@@ -307,7 +311,7 @@ li#nav-left {
         position: unset;
         display: block;
     }
-
+    
     .feature {
         flex-direction: column;
         text-align: center;
