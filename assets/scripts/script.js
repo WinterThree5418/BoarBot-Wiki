@@ -82,7 +82,7 @@ function placeGrayBoars() {
     for (let i=0; i<numBoars; i++) {
         const grayBoarElement = document.createElement('img');
         grayBoarElement.className = 'gray-boar';
-        grayBoarElement.src = '/images/BoarBotMascotGray.png';
+        grayBoarElement.src = '/assets/images/BoarBotMascotGray.png';
         grayBoarElement.style.top = (i * boarSpacing - 150) + 'px';
         grayBoarDiv.appendChild(grayBoarElement);
     }
@@ -103,13 +103,11 @@ function fixNavBar() {
 }
 
 function fixBottomMargin() {
-    if (window.location.pathname !== '/') return;
-
-    const home = document.getElementById('home');
+    const main = document.getElementsByTagName('main')[0];
     if (window.innerWidth < 1000) {
-        home.style.marginBottom = Math.min(175, 50 + Math.max(0, window.innerWidth - 500) / 2) + 'px';
+        main.style.marginBottom = Math.min(175, 50 + Math.max(0, window.innerWidth - 500) / 2) + 'px';
     } else {
-        home.style.marginBottom = '175px';
+        main.style.marginBottom = '175px';
     }
 }
 
