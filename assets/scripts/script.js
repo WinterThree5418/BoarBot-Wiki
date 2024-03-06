@@ -12,6 +12,7 @@ window.onload = async () => {
         fixNavMenu();
     };
 };
+
 window.onhashchange = () => {
     history.pushState('', document.title, window.location.pathname + window.location.search);
 };
