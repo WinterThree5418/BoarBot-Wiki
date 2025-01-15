@@ -1,0 +1,16 @@
+{
+  "id": "doc",
+  "title": "doc",
+  "description": "",
+  "source": "@site/docs/doc.md",
+  "sourceDirName": ".",
+  "slug": "/doc",
+  "permalink": "/docs/doc",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/doc.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar"
+}
