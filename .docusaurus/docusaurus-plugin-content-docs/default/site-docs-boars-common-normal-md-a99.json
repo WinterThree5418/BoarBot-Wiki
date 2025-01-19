@@ -1,0 +1,23 @@
+{
+  "id": "boars/common/normal",
+  "title": "Normal Boar",
+  "description": "Guys it's me Normal Boar",
+  "source": "@site/docs/boars/common/normal.md",
+  "sourceDirName": "boars/common",
+  "slug": "/boars/common/normal",
+  "permalink": "/boars/common/normal",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Common Boars",
+    "permalink": "/category/common-boars"
+  },
+  "next": {
+    "title": "Testing Page",
+    "permalink": "/example"
+  }
+}

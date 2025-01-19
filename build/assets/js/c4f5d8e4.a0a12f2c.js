@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkboar_bot_wiki=self.webpackChunkboar_bot_wiki||[]).push([[634],{9179:(e,r,t)=>{t.r(r),t.d(r,{default:()=>b});var u=t(1410),a=t(4848);function b(){return(0,a.jsx)(u.A,{})}}}]);

@@ -6,15 +6,21 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --secondary-background-color: #2D2F31;
+
+  --ifm-font-color-base: #ffffff;
+  --ifm-heading-color: #51D181;
   --ifm-background-color: #212224;
   --ifm-navbar-link-color: #51D181;
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #51D181;
+  --ifm-color-content-secondary: #BABABA;
+  --ifm-breadcrumb-item-background-active: var(--secondary-background-color);
+  --ifm-breadcrumb-separator-filter: invert(100%);
+  --ifm-menu-link-sublist-icon-filter: invert(100%);
+  --ifm-toc-border-color: var(--secondary-background-color);
+  --ifm-menu-color: var(--ifm-color-content-secondary);
+  --ifm-code-background: var(--secondary-background-color);
+  --ifm-blockquote-color: var(--ifm-color-content-secondary);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -22,4 +28,56 @@
 .navbar {
   background: none;
   box-shadow: none;
+}
+
+.pagination-nav__link {
+  border: none;
+  background-color: var(--secondary-background-color);
+}
+
+article .cardContainer_fWXF {
+  border: none;
+  color: var(--ifm-color-content-secondary);
+}
+
+article .cardContainer_fWXF h2 {
+  border: none;
+  color: var(--ifm-color-content-secondary);
+}
+
+article .cardContainer_fWXF:hover {
+  color: #51D181;
+}
+
+article .cardContainer_fWXF h2:hover {
+  color: #51D181;
+}
+
+.card {
+  background-color: var(--secondary-background-color);
+}
+
+pre code {
+  background-color: var(--secondary-background-color);
+  color: var(--ifm-color-content-secondary);
+}
+
+blockquote {
+  background-color: var(--secondary-background-color);
+}
+
+.alert {
+  background-color: var(--secondary-background-color);
+}
+
+.alert--success {
+  color: #55FF55;
+  --ifm-alert-border-color: #55FF55;
+  --ifm-alert-foreground-color: #55FF55;
+}
+
+.alert--danger {
+  color: #FF5555;
+  --ifm-alert-border-color: #FF5555;
+  --ifm-alert-foreground-color: #FF5555;
 }

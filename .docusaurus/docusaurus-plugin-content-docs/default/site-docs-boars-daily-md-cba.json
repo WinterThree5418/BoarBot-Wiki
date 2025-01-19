@@ -1,0 +1,19 @@
+{
+  "id": "boars/daily",
+  "title": "Rarities",
+  "description": "What are rarities",
+  "source": "@site/docs/boars/daily.md",
+  "sourceDirName": "boars",
+  "slug": "/boars/daily",
+  "permalink": "/boars/daily",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Boars",
+    "permalink": "/category/boars"
+  }
+}

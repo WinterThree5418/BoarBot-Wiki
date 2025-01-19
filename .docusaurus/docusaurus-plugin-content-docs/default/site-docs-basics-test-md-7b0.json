@@ -1,0 +1,19 @@
+{
+  "id": "basics/test",
+  "title": "Basics 1",
+  "description": "Here are the basics",
+  "source": "@site/docs/basics/test.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/test",
+  "permalink": "/basics/test",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Basics",
+    "permalink": "/category/the-basics"
+  }
+}

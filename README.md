@@ -1,41 +1,33 @@
-# Website
+# BoarBot Wiki
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This wiki is built using [Docusaurus](https://docusaurus.io/). This decision was made as contribution is as easy as making markdown files. There is plenty of documentation on their website if you want more information on what you can do.
 
-### Installation
+# Contributing
 
-```
-$ yarn
-```
+Contributing to the wiki is pretty easy. All you need is [NodeJS](https://nodejs.org/en/download).
 
-### Local Development
+## Setup
 
-```
-$ yarn start
-```
+1. Install all needed packages by running `npm install` (This could take a few minutes)
+2. Start the website by running `npm run start`
+3. Access the local version of the wiki by going to http://localhost:3000
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Directories
 
-### Build
+### docs/
 
-```
-$ yarn build
-```
+This directory is where the markdown files are stored. These files are automatically converted into HTML pages.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+When making changes, this is the main directory you'll be working in.
 
-### Deployment
+### static/img/
 
-Using SSH:
+When adding images to the website, add them to this directory. They can be used by referring to /img/<img_name> in your markdown files.
 
-```
-$ USE_SSH=true yarn deploy
-```
+### src/css/
 
-Not using SSH:
+This directory is where all styling overrides are kept. Any changes in here should be heavily scrutinized as the styling of the wiki should stay mostly the same.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+## Finalizing Changes
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+When you have made all your changes, you'll need to build them so the wiki can read them from a static context. Just run `npm run build` and you're good to go!
