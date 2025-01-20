@@ -1,5 +1,7 @@
 # Normal Boar
 
+<aside class="side-info">
+
 ### Image
 
 ![Normal Boar](/img/boars/NormalBoar.png)
@@ -15,6 +17,7 @@ Common
 ### Classification
 
 Benign
+</aside>
 
 ## About
 
@@ -26,6 +29,4 @@ The first edition of Normal Boar in BoarBot was obtained by user **ruletka**.
 
 ### History
 
-![Alpha Normal Boar](/img/alpha/NormalBoar.png)
 
-*Normal Boar in Alpha*

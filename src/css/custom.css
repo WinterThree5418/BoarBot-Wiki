@@ -86,3 +86,16 @@ blockquote {
   --ifm-alert-border-color: #FF5555;
   --ifm-alert-foreground-color: #FF5555;
 }
+
+.side-info {
+    float: right;
+    width: 270px;
+    margin: 0 0 18px 18px;
+    clear: right;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    overflow: hidden;
+    padding: 15px;
+}
+
