@@ -2,8 +2,6 @@
 
 <aside class="side-info">
 
-### Image
-
 ![Normal Boar](/img/boars/NormalBoar.png)
 
 ### Rarity
@@ -12,7 +10,7 @@ Common
 
 ### Description
 
-> *The original boar, the standard Creator Boar set and based many of their creations off of. Despite its historical significance, it's still rather unremarkable on its own.*
+*The original boar, the standard Creator Boar set and based many of their creations off of. Despite its historical significance, it's still rather unremarkable on its own.*
 
 ### Classification
 

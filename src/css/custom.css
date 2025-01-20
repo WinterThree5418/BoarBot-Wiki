@@ -89,13 +89,12 @@ blockquote {
 
 .side-info {
     float: right;
+    clear: right;
     width: 270px;
     margin: 0 0 18px 18px;
-    clear: right;
-    border-radius: 3px;
-    border-width: 1px;
-    border-style: solid;
+    border-radius: 0.4rem;
     overflow: hidden;
     padding: 15px;
+    background-color: var(--secondary-background-color);
 }
 
