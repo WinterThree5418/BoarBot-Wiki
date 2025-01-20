@@ -12,6 +12,7 @@
   --ifm-heading-color: #51D181;
   --ifm-background-color: #212224;
   --ifm-navbar-link-color: #51D181;
+  --ifm-navbar-background-color: var(--secondary-background-color);
   --ifm-color-primary: #51D181;
   --ifm-color-content-secondary: #BABABA;
   --ifm-breadcrumb-item-background-active: var(--secondary-background-color);
@@ -27,6 +28,10 @@
 
 .navbar {
   background: none;
+  box-shadow: none;
+}
+
+.navbar-sidebar__brand {
   box-shadow: none;
 }
 
