@@ -88,14 +88,22 @@ blockquote {
 }
 
 .side-info {
-    float: right;
-    clear: right;
-    width: 270px;
-    margin: 0 0 18px 18px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 18px;
     border-radius: 0.4rem;
     overflow: hidden;
     padding: 15px;
     background-color: var(--secondary-background-color);
+}
+
+@media screen and (min-width: 997px) {
+  .side-info {
+    float: right;
+    clear: right;
+    width: 270px;
+    margin: 0 0 18px 18px;
+  }
 }
 
 .side-info > p > img {
