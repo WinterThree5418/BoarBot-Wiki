@@ -98,3 +98,7 @@ blockquote {
     background-color: var(--secondary-background-color);
 }
 
+.side-info > p > img {
+    border-radius: 0.4rem;
+}
+
