@@ -104,6 +104,10 @@ blockquote {
     width: 270px;
     margin: 0 0 18px 18px;
   }
+
+  main {
+      margin-top: calc(0px - var(--ifm-navbar-height));
+  }
 }
 
 .side-info > p > img {
