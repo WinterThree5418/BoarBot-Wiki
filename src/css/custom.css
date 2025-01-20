@@ -31,6 +31,10 @@
   box-shadow: none;
 }
 
+.navbar-sidebar__brand {
+  box-shadow: none;
+}
+
 .pagination-nav__link {
   border: none;
   background-color: var(--secondary-background-color);
